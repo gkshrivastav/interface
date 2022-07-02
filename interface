@@ -1,0 +1,17 @@
+interface MyProject {
+    val proj: Int // abstract
+
+    val propertyWithImplementation: String
+        get() = "me"
+
+    fun me() {
+        print(proj)
+    }
+}
+
+abstract class Child : MyProject {
+     val prop: Int = 29
+}fun main() {
+   val output = "I'm GK"
+   println(output)
+}
